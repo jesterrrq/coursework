@@ -18,7 +18,6 @@
         <a href="test1.html">Кухня</a>
         <a href="test2.html">Ванная</a>
         <a href="test3.html">Гостиная</a>
-        <a href="test4.html">детская</a>
         <a href="test5.html">прихожая</a>
     </nav>
 
@@ -26,23 +25,73 @@
     <div class="container">
         <section id="prihoj" class="category">
             <h2>прихожая</h2>
-            <div class="product">
+            <div class="product" data-id="301" data-name="Ключница" data-price="890">
                 <img src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/-11/684/914/506/275/4/100051957886b2.jpg" alt="">
-                <h3>настенная вешалка</h3>
-                <p>4 крючка, деревянная основа, 500 руб.</p>
-                <div class="button">Купить</div>
+                <h3>Ключница настенная</h3>
+                <p>Дерево, 6 крючков, с полочкой. Цена: 890 руб.</p>
+                <div class="button add-to-cart">Купить</div>
             </div>
-            <div class="product">
+            
+            <div class="product" data-id="302" data-name="Зеркало в рост" data-price="5600">
                 <img src="https://www.blue-crystals.ru/1/picture-254703_Обувь-для-обуви-6-tier-32-pair-parate/image.jpg" alt="">
-                <h3>шкаф для обуви</h3>
-                <p>8 полок, закрывающиеся полки, 50 руб.</p>
-                <div class="button">Купить</div>
+                <h3>Зеркало в раме</h3>
+                <p>160×40 см, рама МДФ, крепление на стену. Цена: 5600 руб.</p>
+                <div class="button add-to-cart">Купить</div>
+            </div>
+            
+            <div class="product" data-id="303" data-name="Обувница" data-price="3200">
+                <img src="https://static.onlinetrade.ru/img/items/m/tochka_poryadka_dvukhurovnevaya_obuvnitsa_mh_0505_2_chernyy__3380551_1.jpg" alt="">
+                <h3>Обувница открытая</h3>
+                <p>2 яруса, металл, компактная. Цена: 3200 руб.</p>
+                <div class="button add-to-cart">Купить</div>
+            </div>
+            
+            <div class="product" data-id="304" data-name="Вешалка" data-price="2400">
+                <img src="https://ir.ozone.ru/multimedia/c600/1014974404.jpg" alt="">
+                <h3>Вешалка напольная</h3>
+                <p>8 крючков, устойчивая, дерево+металл. Цена: 2400 руб.</p>
+                <div class="button add-to-cart">Купить</div>
+            </div>
+            
+            <div class="product" data-id="305" data-name="Полка для обуви" data-price="1890">
+                <img src="https://cdn.poryadok.ru/upload/iblock/d70/d70544b85d488ccf14e21f1706c4c679.jpg" alt="">
+                <h3>Полка для обуви 3-ярусная</h3>
+                <p>Пластик, легко моется, до 9 пар. Цена: 1890 руб.</p>
+                <div class="button add-to-cart">Купить</div>
+            </div>
+            
+            <div class="product" data-id="306" data-name="Коврик" data-price="1100">
+                <img src="https://cdn1.ozone.ru/s3/multimedia-9/c600/6492397677.jpg" alt="">
+                <h3>Коврик придверный</h3>
+                <p>Влагостойкий, 50×80 см, с бортиком. Цена: 1100 руб.</p>
+                <div class="button add-to-cart">Купить</div>
+            </div>
+            
+            <div class="product" data-id="307" data-name="Зонтница" data-price="1450">
+                <img src="https://ir.ozone.ru/s3/multimedia-9/6074181645.jpg" alt="">
+                <h3>Зонтница цилиндрическая</h3>
+                <p>Металл, с поддоном, чёрная. Цена: 1450 руб.</p>
+                <div class="button add-to-cart">Купить</div>
+            </div>
+            
+            <div class="product" data-id="308" data-name="Консоль" data-price="9800">
+                <img src="https://ir.ozone.ru/s3/multimedia-1-l/7111241625.jpg" alt="">
+                <h3>Консоль узкая</h3>
+                <p>ЛДСП+металл, цвет венге. Цена: 9800 руб.</p>
+                <div class="button add-to-cart">Купить</div>
             </div>
         </section>
     </div>
     
 
-    
+    <div class="kor">
+        <h4>Корзина </h4>
+        <div class="pop" id="cart-items">
+            <p>Корзина пуста</p>
+        </div>
+        <div class="cart-total">Итого: <span id="cart-total">0</span> руб.</div>
+        <button class="clear-btn">Очистить</button>
+    </div>
    
 </body>
 </html>
