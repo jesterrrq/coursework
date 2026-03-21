@@ -10,20 +10,35 @@
     <header>
         <h1>Информационный каталог товаров для дома</h1>
         <p>Найдите всё необходимое для комфортного дома</p>
-    <form>
-        <input type="text" name="query" placeholder="Поиск"  >
-        <button type="button" class="btn btn-success">искать</button>
-    </form>
+        <button id="openModal" class="Modal">регистрация</button>
+<div id="modalOverlay" class="modal-overlay">
+    <div class="modal-window">
+        <div class="modal-header">
+            <h3>Регистрация</h3>
+            <span class="close-btn" id="closeModal" >&times;</span>
+        </div>
+        <div class="modal-content">
+            
+             <label for="nickname" class="form-label">Ваш никнейм</label>
+            <input type="text" class="form-control" id="nickname" name="nickname" aria-describedby="nicknameHelp"/>
+        </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Пароль</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1"/>
+
+            </div>
+        <div class="modal-footer">
+            <button class="btn-primary">подтвердить</button>
+            <button class="btn-secondary" id="cancelModal" >выход</button>
+        </div>
+    </div>
+</div>
     </header>
-
-
-
-
     <nav>
         <a href="test1.html">Кухня</a>
         <a href="test2.html">Ванная</a>
         <a href="test3.html">Гостиная</a>
-        <a href="test5.html">прихожая</a>
+        <a href="test5.html">прихожая</a>        
     </nav>
     
     <div class="container">
