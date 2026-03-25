@@ -19,16 +19,42 @@
         </div>
         <div class="modal-content">
             
-             <label for="nickname" class="form-label">Ваш никнейм</label>
+             <label for="nickname" class="form-label">nickname</label>
             <input type="text" class="form-control" id="nickname" name="nickname" aria-describedby="nicknameHelp"/>
         </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Пароль</label>
+          <div class="password">
+            <label for="exampleInputPassword1" class="form-label">password</label>
             <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1"/>
-
             </div>
+
+            <div class="olds">
+                <label for="yearsOld" class="olds" >Возраст</label>
+                <input type="number" class="olds" id="years">
+            </div>
+
+            <div class="politica">
+                <label> <input type="checkbox"> Согласен с условиями </label>
+            </div>
+
+            <label for="выберете как к вам удобнее обратится в случае чего">
+            <p>
+                <input type="radio" value="net" name="tech"/>электронная почта
+            </p>
+            <p>
+                <input type="radio" value="java" name="tech"/>номер телефона
+            </p>
+            </label>
+             <select id="phone" name="phone">
+                    <optgroup label="Категория1">
+                        <option value="iphone 6s">iPhone 6S</option>
+                    </optgroup>
+                    <optgroup label="Категория2">
+                        <option value="lumia 950">Lumia 950</option>
+                    </optgroup>
+                </select>
+
         <div class="modal-footer">
-            <button class="btn-primary">подтвердить</button>
+            <button class="btn_reg">подтвердить</button>
             <button class="btn-secondary" id="cancelModal" >выход</button>
         </div>
     </div>
@@ -41,6 +67,10 @@
         <a href="test5.html">прихожая</a>        
     </nav>
     
+    
+</div>
+
+
     <div class="container">
         <section id="kitchen" class="category">
             <h2>Кухня</h2>
@@ -105,4 +135,6 @@
     </div>
     <script src="js/inr.js"></script>
 </body>
+
+
 </html>

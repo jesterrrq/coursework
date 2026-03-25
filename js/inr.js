@@ -38,7 +38,7 @@ closeModal();
 //добавление данных в бд
 
 async function fetchData(nickname, password) {
-	let url = `http://localhost//?nickname=${nickname}&password=${password}`
+	let url = `http://localhost/?nickname=${nickname}&password=${password}`
 	let response = await fetch(url, {
 		method: 'GET',
 		headers: { Accept: 'application/json' },
