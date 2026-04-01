@@ -18,20 +18,17 @@
             <span class="close-btn" id="closeModal" >&times;</span>
         </div>
         <div class="modal-content">
-            
-             <label for="nickname" class="form-label">nickname</label>
+            <label for="nickname" class="form-label">nickname</label>
             <input type="text" class="form-control" id="nickname" name="nickname" aria-describedby="nicknameHelp"/>
         </div>
           <div class="password">
             <label for="exampleInputPassword1" class="form-label">password</label>
             <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1"/>
             </div>
-
-            <div class="olds">
-                <label for="yearsOld" class="olds" >Возраст</label>
-                <input type="number" class="olds" id="years">
-            </div>
-
+        <div class="olds">
+            <label for="yerasOld" class="olds">Возраст</label>
+            <input type="number" class="olds" id="years" name="olds" aria-describedby="nicknameHelp"/>
+        </div>
             <div class="politica">
                 <label> <input type="checkbox"> Согласен с условиями </label>
             </div>
@@ -45,13 +42,11 @@
             </p>
             </label>
              <select id="phone" name="phone">
-                    <optgroup label="Категория1">
-                        <option value="iphone 6s">iPhone 6S</option>
-                    </optgroup>
-                    <optgroup label="Категория2">
-                        <option value="lumia 950">Lumia 950</option>
-                    </optgroup>
-                </select>
+                        <option value="lumia 950">Выберите устройсво с которго вы зашли к нам на сайт</option>
+                        <option value="lumia">Смартфон</option>
+                        <option value="lumia 950">ПК</option>
+                        <option value="lumia 950">Планшет</option>
+            </select>
 
         <div class="modal-footer">
             <button class="btn_reg">подтвердить</button>
