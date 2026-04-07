@@ -406,7 +406,7 @@ select:focus{
 
 .slides{
     display: flex;
-    width: 300%;
+    width: 100%;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -438,7 +438,7 @@ input:checked + label{
 }
 
 .slider {
-    width: 300px; 
+    width: 500px; 
     overflow: hidden; 
     position: relative;
 }
@@ -485,3 +485,4 @@ input:checked + label{
 .next {
     right: 10px;
 }
+

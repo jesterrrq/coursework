@@ -27,3 +27,4 @@ nextButton.addEventListener('click',() => {
 });
 
 goToSlide(0);
+
