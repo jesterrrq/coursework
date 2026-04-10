@@ -41,9 +41,7 @@ function get_data_form() {
   const btn_reg = document.querySelector(".btn_reg");
   if (!btn_reg) return;
 
-  // Защита от повторного вызова функции
-  if (btn_reg.dataset.listenerAttached) return;
-  btn_reg.dataset.listenerAttached = "true";
+
 
   btn_reg.addEventListener("click", async (event) => {
 
