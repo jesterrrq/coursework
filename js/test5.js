@@ -35,24 +35,17 @@ function renderProducts(products, container) {
             
     container.innerHTML = products.map(product => `
         <article class="product" data-id="${product.id}">
-            <img src="${escapeHtml(product.link)}" alt="${escapeHtml(product.name)}">
-            <h3>${escapeHtml(product.name)}</h3>
+            <img src="${(product.link)}" alt="${(product.name)}">
+            <h3>${(product.name)}</h3>
             <p class="price">${Number(product.price).toLocaleString('ru-RU')} ₽</p>
-            <button class="button add-to-cart" onclick="addToCart(${product.id}, '${escapeHtml(product.name)}', ${product.price})">
+            <button class="button add-to-cart" onclick="addToCart(${product.id}, '${(product.name)}', ${product.price})">
                 Купить
             </button>
         </article>
     `).join('');
 }
 
-// защита от взлома
-function escapeHtml(text) {
-    if (text === null || text === undefined) return '';
-    const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' };
-    return String(text).replace(/[&<>"']/g, m => map[m]);
-}
-
-        // Корзина
+// Корзина
 function addToCart(id, name, price) {
     cart.push({ id, name, price });
     updateCart();
